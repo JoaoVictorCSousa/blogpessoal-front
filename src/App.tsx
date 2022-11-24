@@ -3,14 +3,17 @@ import logo from './logo.svg';
 import './App.css';
 import { Title } from './components/Title/Title';
 import { Text  } from './components/Text/Text';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  const nome = 'Diogo';
   
   return (
     <>
-    <Title nome={nome} />
-    <Text />
+
+    <Navbar/>
+      
+      
+
     </>
     
    
@@ -18,3 +21,4 @@ function App() {
 }
 
 export default App;
+
