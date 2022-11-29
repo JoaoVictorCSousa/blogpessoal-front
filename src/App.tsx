@@ -1,28 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import {Navbar} from './components/estaticos/Navbar/Navbar';
+import {Footer} from './components/estaticos/Footer/Footer';
+import {Home} from './Paginas/Home/Home';
 import './App.css';
-import { Title } from './components/Title/Title';
-import { Text  } from './components/Text/Text';
-import { Navbar } from './components/Navbar/Navbar'
-import { Footer } from './components/Footer/Footer';
-import { Home } from './components/Home/Home';
+import {Login} from './Paginas/login/Login';
+
 
 function App() {
-  
   return (
-    <>
+    <Router>
+      <Navbar />
+      <Routes>
 
-    <Navbar/>
-    <Home />
-    <Footer/>
-      
-      
+        <Route path="/" element={<Login  />} />
 
-    </>
-    
-   
+        <Route path="/home" element={<Home />} />
+
+        <Route path="/login" element={<Login />} />
+
+      </Routes>
+      <Footer />
+    </Router>
+
   );
 }
 
 export default App;
-
