@@ -5,6 +5,7 @@ import {Footer} from './components/estaticos/Footer/Footer';
 import {Home} from './Paginas/Home/Home';
 import './App.css';
 import {Login} from './Paginas/login/Login';
+import { CadastroUsuario } from './Paginas/cadastroUsuario/CadastroUsuario';
 
 
 function App() {
@@ -19,11 +20,14 @@ function App() {
 
         <Route path="/login" element={<Login />} />
 
+        <Route path="/cadastrousuario" element={<CadastroUsuario/>} />
+
       </Routes>
       <Footer />
     </Router>
 
   );
 }
+
 
 export default App;

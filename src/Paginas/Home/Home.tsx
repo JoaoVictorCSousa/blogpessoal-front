@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {Typography, Box, Grid, Button} from '@material-ui/core';
 import './Home.css';
 
 
 function Home(){
+    const [num, setNum] = useState (0);
+
+    useEffect (() => {
+        document.title = `Clicou ${num} vezes`;
+
+        return () => {
+
+        }
+    }, [num]);
+    
     return(
         <>
         <Grid container direction="row" justifyContent="center" alignItems="center" style={{ backgroundColor: "#3F51B5" }}>
