@@ -106,4 +106,4 @@ function CadastroUsuario() {
     );
 }
 
-export default CadastroUsuario;
+export {CadastroUsuario};
