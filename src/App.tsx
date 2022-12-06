@@ -6,6 +6,8 @@ import {Home} from './Paginas/Home/Home';
 import './App.css';
 import {Login} from './Paginas/login/Login';
 import { CadastroUsuario } from './Paginas/cadastroUsuario/CadastroUsuario';
+import ListaTema from './components/temas/listaTema/listaTema';
+import ListaPostagem from './components/postagens/listaPostagem/listaPostagem';
 
 
 function App() {
@@ -14,13 +16,19 @@ function App() {
       <Navbar />
       <Routes>
 
-        <Route path="/" element={<Login  />} />
+      <Route path="/" element={<Login  />} />
 
-        <Route path="/home" element={<Home />} />
+      <Route path="/home" element={<Home />} />
 
-        <Route path="/login" element={<Login />} />
+      <Route path="/login" element={<Login />} />
 
-        <Route path="/cadastrousuario" element={<CadastroUsuario/>} />
+      <Route  path="/cadastrousuario" element={<CadastroUsuario/>} />
+
+      <Route path="/temas" element={<ListaTema />} />
+
+      <Route path="/posts" element={<ListaPostagem />} />
+
+
 
       </Routes>
       <Footer />
