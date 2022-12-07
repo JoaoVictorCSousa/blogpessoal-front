@@ -24,7 +24,7 @@ function Navbar() {
 
     var navbarComponent;
 
-    if(token != ""){
+    if(token !== ""){
         navbarComponent =  <AppBar position="static">
         <Toolbar variant="dense">
             <Box style={{ cursor: "pointer" }} >
